@@ -1,0 +1,139 @@
+body{
+  margin:0;
+  background:url("bg-body.jpg");
+}
+.page{
+  background:url("bg-header.jpg") no-repeat center top;
+}
+
+body img{
+  border: 10px solid;
+  border-color: white;
+  margin:0 0 0 -3px;
+}
+body img:hover{
+  filter:alpha(opacity=80);
+  opacity:0.8;
+}
+
+.notice {
+border: 1px solid;
+margin: 10px 0px;
+padding:15px 10px 15px 50px;
+}
+.header{
+  background:url("bg-navigation.jpg") no-repeat center 90px;
+  width:940px;
+  margin:0 auto;
+  height:105px;
+  padding:36px 10px 0;
+
+}
+.header a #logo{
+  display:block;
+  float:left;
+  outline:none;
+     text-decoration: none;
+
+}
+.book{
+  width :100%;
+  min-height:400px;
+}
+.bookimg{
+  width:300px;
+  float:left;
+    text-align: center;
+
+}
+.bookinfo{
+  width: 600px;
+  float: left;
+  position: relative;
+  margin-left: 25px;
+}
+.bookinfo h1{
+      margin-top: 0;
+}
+.header #logo a{
+   color:#5B5B5B;
+   text-decoration: none;
+   font:300%;
+   float:left;
+  outline:none;
+
+}
+
+.header ul{
+  margin:0;
+  list-style:none;
+  padding:13px 0 0;
+  float:right;
+}
+.header ul li{
+  float:left;
+  margin:0 0 0 63px;
+}
+.header ul li a:hover{
+  color:#f78117;
+}
+.header ul li a{
+  font-size:16px;
+  text-decoration:none;
+  color:#5e5e5e;
+  outline:none;
+}
+
+.body{
+  width:940px;
+  margin:0 auto;
+  padding:0 10px;
+  overflow:hidden;
+  min-height: 400px;
+}
+
+
+.body h3{
+  font-size:25px;
+  font-weight:bold;
+  color:#636363;
+  margin:15px 0 10px;
+  line-height:21px;
+}
+.body p{
+  font-size:16px;
+  text-align:justify;
+  color:#636363;
+  margin:0 0 20px;
+  line-height:21px;
+}
+.body p a{
+  outline:none;
+  color:#636363;
+}
+
+
+.notice {
+  border-width: 1px;
+  border-color:#00529B;
+  margin: 10px 0px;
+  padding:15px 10px 15px 50px;
+  color: #00529B;
+}
+
+.footer{
+  width:auto;
+  background:url("bg-footer.jpg") no-repeat center top;
+  padding:65px 10px 207px;
+  margin:0 auto;
+  overflow:hidden;
+
+ 
+}
+.footer p{
+  text-align: center;
+  color:#5b5b5b;
+  font-size:10px;
+  font-family: Trebuchet MS;
+  font-weight:bold;
+}

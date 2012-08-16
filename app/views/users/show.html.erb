@@ -1,0 +1,19 @@
+<%if @user.books.blank? %>
+<p>you got no books :( have add your first book now : </p>
+
+<%= render "users/newbook" %>
+
+
+<%else%>
+
+<%= render "users/showbooks" %>
+
+<%= render "users/newbook" %>
+
+<%end%>
+
+
+<!--<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>-->
+
+<!-- i add this 3shan lama 3mlt el if wa else ..ra7 mesh rady ye6l3 el footer :( -->

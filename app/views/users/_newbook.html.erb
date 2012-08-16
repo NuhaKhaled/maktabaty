@@ -1,0 +1,30 @@
+<h2>Add a book:</h2>
+  <%= form_for([@user, @user.books.build]) do |f| %>
+    <div class="field">
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= f.label :desc %><br />
+    <%= f.text_area :desc %>
+  </div>
+
+  <div class="field">
+
+      <%= f.radio_button :state, 'read', :checked => true %> 
+      <%= label :state_read, 'read' %>
+      <%= f.radio_button :state, 'reading' %>
+      <%= label :state_reading, 'reading' %>
+      <%= f.radio_button :state, 'to read' %>
+      <%= label :state_to_read, 'to_read' %>
+
+  </div>
+
+    Book's Photo : <%= f.file_field :photo %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+
+<%end%>

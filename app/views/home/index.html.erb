@@ -1,0 +1,7 @@
+THIS IS HOME ! :)
+<% if current_user %>  
+    Logged in as <%= current_user.email %>  
+    <%= link_to "check your books", books_page_path %>  
+  <% else %>  
+    login to enjoy our site ! :D
+<% end %> 

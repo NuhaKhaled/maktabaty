@@ -1,0 +1,19 @@
+<h2>Your BookShelf</h2>
+<% @user.books.each do |book| %>
+  <div class="book">
+    <div class ="bookimg"><%= image_tag book.photo.url(:small) %></div> 
+    <div class="bookinfo">
+    <h3> Book's Name :    <%= book.title %> </h3>
+    <p>Description : <%=book.desc%></p>
+    <p>state : <%=book.state%></p>
+     <%= link_to 'Edit', edit_user_book_path(@user, book) %> | 
+
+   <%= link_to 'Destroy book', [book.user, book],
+                 :confirm => 'Are you sure?',
+                 :method => :delete %>
+  </div>
+
+ 
+
+</div>
+<% end %>
