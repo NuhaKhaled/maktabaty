@@ -10,6 +10,8 @@ class User < ActiveRecord::Base
     validates :password,  :length => { :in => 6..20 , :too_short => "must have at least %{count} characters" , :too_long  => "must have at most %{count} characters"}
 
     private
+
+    ## method to turn email into lower case characters
     def downcase_email
       self.email = self.email.downcase if self.email.present?
     end
